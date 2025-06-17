@@ -41,7 +41,7 @@ function isValidPassword(password) {
         }
 
         if (err == "" && required == "") {
-            $("#errors").html("You are registered.");
+            $("#errors").html("You are registered.").css("color","green");
         } else {
             $("#errors").html(err + required);
         }
